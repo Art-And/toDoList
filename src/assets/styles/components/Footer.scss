@@ -1,0 +1,21 @@
+@import '../custom.scss';
+
+.footer {
+  background-color: $container-color;
+  display: flex;
+  align-items: center;
+  height: 100px;
+  width: 95%;
+  margin:8px auto;
+  border-radius: 25px;
+}
+.footer__a {
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+  padding-left: 30px;
+  text-decoration: none;
+}
+.footer__a:hover {
+  text-decoration: underline;
+}
