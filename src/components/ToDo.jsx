@@ -3,11 +3,23 @@ import { RiCloseCircleLine } from 'react-icons/ri';
 import { TiEdit } from 'react-icons/ti';
 import FormList from './FormList';
 
-const ToDo = ({ tasks, completeTask, removeTask }) => {
+const ToDo = ({ tasks, completeTask, removeTask, updateTask }) => {
   const [edit, setEdit] = useState({
     id: null,
     value: '',
   });
+
+  const submitUpdate = (value) => {
+    updateTask(edit.id, value);
+    setEdit({
+      id: null,
+      value: '',
+    });
+  };
+
+  if (edit.id) {
+    return <FormList edit={edit} onSubmit={submitUpdate} />;
+  }
 
   return tasks.map((task, index) => (
     <div

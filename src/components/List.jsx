@@ -15,6 +15,14 @@ const List = () => {
     setTasks(newTasks);
   };
 
+  const updateTask = (taskId, newValue) => {
+    if (!newValue.text || /^\s*$/.test(newValue.text)) {
+      return;
+    };
+
+    setTasks((prev) => prev.map((item) => (item.id === taskId ? newValue : item)))
+  };
+
   const removeTask = (id) => {
     const removeArr = [...tasks].filter((task) => task.id !== id);
 
@@ -39,6 +47,7 @@ const List = () => {
         tasks={tasks}
         completeTask={completeTask}
         removeTask={removeTask}
+        updateTask={updateTask}
       />
     </>
   );
