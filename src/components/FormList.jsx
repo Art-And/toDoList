@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Button } from 'react-bootstrap';
-import { RiEditCircleFill } from 'react-icons/ri';
+import '../assets/styles/components/TaskBar.scss';
 
 const FormList = (props) => {
   const [input, setInput] = useState(props.edit ? props.edit.value : '');
@@ -27,7 +27,7 @@ const FormList = (props) => {
   };
 
   return (
-    <form className='' onSubmit={handleSubmit}>
+    <form className='todo-form' onSubmit={handleSubmit}>
       {props.edit ? (
         <>
           <input
@@ -35,11 +35,11 @@ const FormList = (props) => {
             placeholder='Update your task'
             value={input}
             name='text'
-            className=''
+            className='todo-input edit'
             onChange={handleChange}
             ref={inputRef}
           />
-          <Button type='submit' className=''>Update</Button>
+          <Button type='submit' className='todo-button edit'>Update</Button>
         </>
       ) : (
         <>
@@ -48,11 +48,11 @@ const FormList = (props) => {
             placeholder='New task'
             value={input}
             name='text'
-            className=''
+            className='todo-input'
             onChange={handleChange}
             ref={inputRef}
           />
-          <Button type='submit' className=''>Add a task</Button>
+          <Button type='submit' className='todo_button'>Add a task</Button>
         </>
       )}
     </form>

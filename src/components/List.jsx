@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import FormList from './FormList';
 import ToDo from './ToDo';
+import '../assets/styles/components/List.scss';
+import '../assets/styles/components/TaskBar.scss';
 
 const List = () => {
   const [tasks, setTasks] = useState([]);
@@ -12,6 +14,7 @@ const List = () => {
 
     const newTasks = [task, ...tasks];
 
+    console.log(task, ...tasks);
     setTasks(newTasks);
   };
 

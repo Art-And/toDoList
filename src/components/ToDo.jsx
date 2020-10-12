@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { RiCloseCircleLine } from 'react-icons/ri';
 import { TiEdit } from 'react-icons/ti';
 import FormList from './FormList';
+import '../assets/styles/components/TaskBar.scss';
 
 const ToDo = ({ tasks, completeTask, removeTask, updateTask }) => {
   const [edit, setEdit] = useState({
