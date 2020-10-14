@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { RiCloseCircleLine } from 'react-icons/ri';
 import { TiEdit } from 'react-icons/ti';
-import { GrCirclePlay } from 'react-icons/gr';
 import FormList from './FormList';
 import '../assets/styles/components/TaskBar.scss';
 
