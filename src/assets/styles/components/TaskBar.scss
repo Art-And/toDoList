@@ -32,8 +32,8 @@ h1 {
   outline: none;
   background: linear-gradient(
     90deg,
-    rgba(17, 122, 255, 1) 0%,
-    rgba(50, 224, 196, 1) 100%
+    rgba(50, 224, 196, 1) 30%,
+    rgba(17, 122, 255, 1) 100%
   );
   color: #fff;
   text-transform: capitalize;
@@ -46,8 +46,8 @@ h1 {
 .todo-button.edit {
   background: linear-gradient(
     90deg,
-    rgba(17, 122, 255, 1) 0%,
-    rgba(50, 224, 196, 1) 100%
+    rgba(50, 224, 196, 1) 30%,
+    rgba(17, 122, 255, 1) 100%
   );
   padding: 13px 30px;
 }
@@ -66,8 +66,8 @@ h1 {
   color: #fff;
   background: linear-gradient(
     90deg,
-    rgba(255, 84, 17, 1) 0%,
-    rgba(255, 118, 20, 1) 100%
+    rgba(50, 224, 196, 1) 30%,
+    rgba(17, 122, 255, 1) 70%
   );
 
   padding: 16px;
@@ -77,11 +77,7 @@ h1 {
 
 
 .todo-row:nth-child(2n + 3) {
-  background: linear-gradient(
-    90deg,
-    rgba(17, 122, 255, 1) 0%,
-    rgba(50, 224, 196, 1) 100%
-  );
+  background:rgba(50, 224, 196, 1) 100%
 }
 
 .icons {
